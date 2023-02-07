@@ -7,11 +7,21 @@
 
 
 /* !COMMON */
+:root{
+    --black-palette: #23272A;
+}
+body {
+    max-width: 1500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img{
+    max-width: 100%;
+}
 .flex {
     display: flex;
 }
 .container {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 ul {
@@ -19,27 +29,47 @@ ul {
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* *common debug */
 .dashed {
     border: 1px dashed black;
 }
-.small {
+/* .small {
     height: 250px;
-}
-.medium {
+} */
+/* .medium {
     height: 350px;
-}
-.big {
+} */
+/* .big {
     height: 500px;
+} */
+.btn {
+    border-radius: 1em;
+    padding: .7em;
 }
+.a-white {
+    background-color: white;
+    color: var(--black-palette);
+}
+.a-black {
+    background-color: var(--black-palette);
 
+}
+.a-indigo {
+    background-color: indigo;
+    color: white;
+}
 /* !HEADING */
+header {
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    color: white;
+}
 .skyblue-row {
     height: 50px;
     justify-content: center;
-    align-items:  center;
 }
 .orange > * {
     padding: 5px;
@@ -53,39 +83,72 @@ a {
 }
 .menu {
     justify-content: center;
+    align-items: center;
     gap: 5px;
 }
 .login {
     width: 20%;
     text-align: end;
 }
-.blue-row.line{
-    padding: 30px 0;
+.blue-row{
+    /* background-image: url(../img/jumbo.png);
+    background-size: cover; */
+    padding: 50px 0;
 }
 .violet {
     margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+.violet > h2 {
+ margin: 3rem 0;
+ font-size: 2rem;   
+}
+.violet > p {
+    margin: 2rem 0;
+    font-size: 1rem;
 }
 /* *heading debug */
-.skyblue-row {
+/* .skyblue-row {
     background-color: skyblue;
-}
-.orange {
+} */
+/* .orange {
     background-color: orange;
-}
+} */
 
 
-.blue-row {
+/* .blue-row {
     background-color: blue;
-}
-.violet {
+} */
+/* .violet {
     background-color: violet;
-    width: 50%;
-}
+} */
 
 /* !MAIN */
 main .line{
-    padding: 30px 0;
+    padding: 50px 0;
 }
+.big-p {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+}
+.medium-p {
+    font-size: 1.5rem;
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+    margin-bottom: 2rem;
+}
+/* .small-p {
+
+} */
+.text {
+    margin: 1rem;
+}
+.green {
+    text-align: center;
+}
+
 .blue {
     width: 60%;
 }
@@ -100,19 +163,19 @@ main .line{
 .white-row {
     background-color: white;
 }
-.blue {
+/* .blue {
     background-color: dodgerblue;
-}
-.pink {
+} */
+/* .pink {
     background-color: pink;
-}
+} */
 .grey-row {
     background-color: lightgrey;
     
 }
-.green {
+/* .green {
     background-color: green;
-}
+} */
 
 /* !FOOTER */
 footer > * {
@@ -143,7 +206,7 @@ footer .bottom {
 }
 /* *footer debug */
 .black-row {
-    background-color: black;
+    background-color: var(--black-palette);
 }
 .coral {
     background-color: coral;
