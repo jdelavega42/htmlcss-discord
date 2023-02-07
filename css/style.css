@@ -1,0 +1,160 @@
+/* !RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* !COMMON */
+.flex {
+    display: flex;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* *common debug */
+.dashed {
+    border: 1px dashed black;
+}
+.small {
+    height: 250px;
+}
+.medium {
+    height: 350px;
+}
+.big {
+    height: 500px;
+}
+
+/* !HEADING */
+.skyblue-row {
+    height: 50px;
+    justify-content: center;
+    align-items:  center;
+}
+.orange > * {
+    padding: 5px;
+    font-size: .8rem;
+}
+.logo {
+    width: 20%;
+}
+.navigation {
+    width: 60%;
+}
+.menu {
+    justify-content: center;
+    gap: 5px;
+}
+.login {
+    width: 20%;
+    text-align: end;
+}
+.blue-row.line{
+    padding: 30px 0;
+}
+.violet {
+    margin: 0 auto;
+}
+/* *heading debug */
+.skyblue-row {
+    background-color: skyblue;
+}
+.orange {
+    background-color: orange;
+}
+
+
+.blue-row {
+    background-color: blue;
+}
+.violet {
+    background-color: violet;
+    width: 50%;
+}
+
+/* !MAIN */
+main .line{
+    padding: 30px 0;
+}
+.blue {
+    width: 60%;
+}
+.pink {
+    width: 40%;
+}
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* *main debug */
+.white-row {
+    background-color: white;
+}
+.blue {
+    background-color: dodgerblue;
+}
+.pink {
+    background-color: pink;
+}
+.grey-row {
+    background-color: lightgrey;
+    
+}
+.green {
+    background-color: green;
+}
+
+/* !FOOTER */
+footer > * {
+    border-bottom: 1px solid white;
+}
+footer .top {
+    padding: 5px 0 25px;
+}
+.coral {
+    width: 30%;
+}
+.cadetblue-column {
+    width: 70%;
+}
+.cadetblue {
+    width: calc(100% / 4);
+}
+footer .bottom {
+    padding-top: 15px;
+}
+.aquamarine {
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.fuchsia {
+    font-size: .8rem;
+    padding: 5px;
+}
+/* *footer debug */
+.black-row {
+    background-color: black;
+}
+.coral {
+    background-color: coral;
+}
+.cadetblue {
+    background-color: cadetblue;
+    border-color: white;
+}
+.aquamarine {
+    background-color: aquamarine;
+}
+.fuchsia {
+    background-color: salmon;
+}
