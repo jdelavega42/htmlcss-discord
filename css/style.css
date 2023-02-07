@@ -9,6 +9,8 @@
 /* !COMMON */
 :root{
     --black-palette: #23272A;
+    --grey-palette: #f6f6f6;
+    --indigo-palette: #7289DA;
 }
 body {
     max-width: 1500px;
@@ -58,7 +60,7 @@ a {
 
 }
 .a-indigo {
-    background-color: indigo;
+    background-color: var(--indigo-palette);
     color: white;
 }
 /* !HEADING */
@@ -135,13 +137,15 @@ main .line{
 }
 .medium-p {
     font-size: 1.5rem;
-    background-image: url(../img/stars.svg);
-    background-size: cover;
-    margin-bottom: 2rem;
 }
 /* .small-p {
 
 } */
+.star {
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+    margin-bottom: 2rem;
+}
 .text {
     margin: 1rem;
 }
@@ -161,7 +165,7 @@ main .line{
 
 /* *main debug */
 .white-row {
-    background-color: white;
+    background-color: #ffffff;
 }
 /* .blue {
     background-color: dodgerblue;
@@ -170,7 +174,7 @@ main .line{
     background-color: pink;
 } */
 .grey-row {
-    background-color: lightgrey;
+    background-color: var(--grey-palette);
     
 }
 /* .green {
@@ -183,6 +187,9 @@ footer > * {
 }
 footer .top {
     padding: 5px 0 25px;
+}
+footer {
+    color: white;
 }
 .coral {
     width: 30%;
@@ -204,17 +211,38 @@ footer .bottom {
     font-size: .8rem;
     padding: 5px;
 }
+
+.coral > p {
+    color: var(--indigo-palette);
+}
+.italia > img{
+    height: .7rem;
+
+}
+.italiano {
+    display: inline-block;
+    font-size: .7rem;
+}
+li {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+.bottom-title {
+    font-size: .8rem;
+    font-weight: bolder;
+    color: var(--indigo-palette);
+}
 /* *footer debug */
 .black-row {
     background-color: var(--black-palette);
 }
-.coral {
+/* .coral {
     background-color: coral;
-}
-.cadetblue {
+} */
+/* .cadetblue {
     background-color: cadetblue;
     border-color: white;
-}
+} */
 .aquamarine {
     background-color: aquamarine;
 }
