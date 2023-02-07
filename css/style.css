@@ -33,20 +33,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
-/* *common debug */
-.dashed {
-    border: 1px dashed black;
-}
-/* .small {
-    height: 250px;
-} */
-/* .medium {
-    height: 350px;
-} */
-/* .big {
-    height: 500px;
-} */
 .btn {
     border-radius: 1em;
     padding: .7em;
@@ -63,18 +49,33 @@ a {
     background-color: var(--indigo-palette);
     color: white;
 }
+/* *common debug */
+/* .dashed {
+    border: 1px dashed black;
+} */
+/* .small {
+    height: 250px;
+} */
+/* .medium {
+    height: 350px;
+} */
+/* .big {
+    height: 500px;
+} */
+
 /* !HEADING */
 header {
     background-image: url(../img/jumbo.png);
     background-size: cover;
     color: white;
 }
-.skyblue-row {
+.orange {
+    margin-top: 1rem;
     height: 50px;
-    justify-content: center;
+    line-height: 50px;
 }
 .orange > * {
-    padding: 5px;
+
     font-size: .8rem;
 }
 .logo {
@@ -93,8 +94,6 @@ header {
     text-align: end;
 }
 .blue-row{
-    /* background-image: url(../img/jumbo.png);
-    background-size: cover; */
     padding: 50px 0;
 }
 .violet {
@@ -138,13 +137,16 @@ main .line{
 .medium-p {
     font-size: 1.5rem;
 }
-/* .small-p {
-
-} */
+.grey-row {
+    background-color: var(--grey-palette);
+    
+}
 .star {
     background-image: url(../img/stars.svg);
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     margin-bottom: 2rem;
+
 }
 .text {
     margin: 1rem;
@@ -173,23 +175,19 @@ main .line{
 /* .pink {
     background-color: pink;
 } */
-.grey-row {
-    background-color: var(--grey-palette);
-    
-}
+
 /* .green {
     background-color: green;
 } */
 
 /* !FOOTER */
-footer > * {
-    border-bottom: 1px solid white;
-}
 footer .top {
     padding: 5px 0 25px;
 }
 footer {
     color: white;
+    background-color: var(--black-palette);
+
 }
 .coral {
     width: 30%;
@@ -235,10 +233,11 @@ li {
     font-weight: bolder;
     color: var(--indigo-palette);
 }
-/* *footer debug */
-.black-row {
-    background-color: var(--black-palette);
+.aquamarine {
+    border-top: 1px solid var(--indigo-palette);
 }
+/* *footer debug */
+
 /* .coral {
     background-color: coral;
 } */
@@ -246,9 +245,9 @@ li {
     background-color: cadetblue;
     border-color: white;
 } */
-.aquamarine {
+/* .aquamarine {
     background-color: aquamarine;
-}
-.fuchsia {
+} */
+/* .fuchsia {
     background-color: salmon;
-}
+} */
