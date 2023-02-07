@@ -14,7 +14,7 @@
 }
 body {
     max-width: 1500px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 img{
     max-width: 100%;
@@ -212,6 +212,9 @@ footer .bottom {
     padding: 5px;
 }
 
+.coral > * {
+    margin-bottom: 1rem;
+}
 .coral > p {
     color: var(--indigo-palette);
 }
