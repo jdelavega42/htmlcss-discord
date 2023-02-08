@@ -72,8 +72,9 @@ header {
 /* *Navigation Bar */
 .orange {
     margin-top: 1rem;
-    height: 50px;
-    line-height: 50px;
+    height: 40px;
+    line-height: 40px;
+    /* align-items: center; */
 }
 .orange > * {
     font-size: .8rem;
@@ -82,15 +83,16 @@ header {
     width: 20%;
 }
 .navigation {
-    width: 60%;
+    flex-grow: 1;
+    margin: 0 1rem;
 }
 .menu {
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
     gap: 5px;
 }
 .login {
-    width: 20%;
+    display: inline-block;
+    /* width: 20%; */
     text-align: end;
 }
 
@@ -169,12 +171,21 @@ main .line{
 }
 .star {
     background-image: url(../img/stars.svg);
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
-    padding: 30px 30px 0;
+    width: 50%;
+    padding-top: 15px;
     margin-bottom: 2rem;
 }
 
+/* *Bonus */
+.wave {
+    display: block;
+    opacity: .04;
+}
+.wave-reverse {
+    transform: rotate(180deg);
+}
 /* *main debug */
 /* .blue {
     background-color: dodgerblue;
@@ -230,6 +241,7 @@ li {
     font-size: .8rem;
     font-weight: bolder;
     color: var(--indigo-palette);
+    margin-bottom: .8rem;
 }
 /* *Bottom Title */
 .aquamarine {
